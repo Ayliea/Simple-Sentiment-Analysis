@@ -21,7 +21,7 @@ public class ReviewEntry {
 		boolean firstSentence = false;
 
 		StringTokenizer sToken;
-		BufferedReader TSVFile = new BufferedReader(new FileReader("c:\\Users\\Tacit\\Downloads\\movieReviews.tsv"));
+		BufferedReader TSVFile = new BufferedReader(new FileReader("https://github.com/Ayries750/Simple-Sentiment-Analysis/blob/main/movieReviews.tsv"));
 		String dataRow = TSVFile.readLine(); // Read first line.
 		List<String> dataArray = null;
 
