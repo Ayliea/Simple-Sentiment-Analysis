@@ -21,7 +21,8 @@ public class ReviewEntry {
 		boolean firstSentence = false;
 
 		StringTokenizer sToken;
-		BufferedReader TSVFile = new BufferedReader(new FileReader("https://github.com/Ayries750/Simple-Sentiment-Analysis/blob/main/movieReviews.tsv"));
+		BufferedReader TSVFile = new BufferedReader(
+				new FileReader("https://github.com/Ayries750/Simple-Sentiment-Analysis/tree/main/movieReviews.tsv"));
 		String dataRow = TSVFile.readLine(); // Read first line.
 		List<String> dataArray = null;
 
@@ -72,17 +73,6 @@ public class ReviewEntry {
 		System.out.print("Sentence ID " + sentenceID + " has " + numPhrases + " phrases with an average rating of "
 				+ String.format("%.2f", avgScore) + ". The overall sentiment is " + ovrlSentiment + ".");
 
-		/*
-		 * I assume you wanted the program to count the phrases as they're indicated in
-		 * the TSV file, but commented an alternate statement in case you actually
-		 * wanted the program to indicate the number of individual words
-		 * (punctuation-inclusive)
-		 */
-
-		// System.out.print("Sentence ID " + sentenceID + " has " + numWords + " phrases
-		// with an average rating of "
-		// + String.format("%.2f", avgScore) + ". The overall sentiment is " +
-		// ovrlSentiment + ".");
 	}
 
 	public static void main(String[] args) throws Exception {
@@ -93,7 +83,7 @@ public class ReviewEntry {
 		int sentenceID = scnr.nextInt();
 
 		CalcAverage(sentenceID);
-		
+
 		scnr.close();
 	}
 }
