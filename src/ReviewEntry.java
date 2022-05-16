@@ -1,5 +1,5 @@
 
-//Calculates the sentiment of user-selected Rotten Tomatoes movies review using the aggregate numerical sentiment value of its content
+//Calculates the sentiment of user-selected Rotten Tomatoes movie review using the aggregate numerical sentiment value of its content
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class ReviewEntry {
 
 		StringTokenizer sToken;
 		BufferedReader TSVFile = new BufferedReader(
-				new FileReader("https://github.com/Ayries750/Simple-Sentiment-Analysis/tree/main/movieReviews.tsv"));
+				new FileReader("tsv/movieReviews.tsv"));
 		String dataRow = TSVFile.readLine(); // Read first line.
 		List<String> dataArray = null;
 
